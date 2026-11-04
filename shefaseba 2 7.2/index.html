@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Étoile Academy | My School</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fff7fb;
+            color: #63324b;
+        }
+
+        /* NAVIGATION */
+        header {
+            background: #63324b;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #f5b9d3;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            min-height: 550px;
+            padding: 80px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            background: linear-gradient(120deg, #fff7fb, #f5dce8);
+        }
+
+        .hero-text {
+            max-width: 550px;
+        }
+
+        .hero-text h4 {
+            color: #b94f83;
+            letter-spacing: 4px;
+            margin-bottom: 15px;
+        }
+
+        .hero-text h1 {
+            font-size: 55px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #765a6a;
+        }
+
+        .hero-image {
+            width: 45%;
+            max-width: 480px;
+            border-radius: 30px;
+            box-shadow: 0 15px 40px #63324b30;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 30px;
+            background: #b94f83;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #8f3f69;
+            transform: translateY(-3px);
+        }
+
+        /* ABOUT SECTION */
+        .about {
+            padding: 80px 8%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        .about-description {
+            max-width: 750px;
+            margin: auto;
+            font-size: 17px;
+            line-height: 1.8;
+            color: #765a6a;
+        }
+
+        /* VALUES SECTION */
+        .values {
+            padding: 40px 8% 80px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px #8f3f6915;
+            border: 1px solid #f0d7e4;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px #8f3f6925;
+        }
+
+        .card .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+            font-size: 23px;
+        }
+
+        .card p {
+            color: #765a6a;
+            line-height: 1.7;
+        }
+
+        /* CONTACT SECTION */
+        .contact {
+            background: #f5dce8;
+            padding: 65px 8%;
+            text-align: center;
+        }
+
+        .contact p {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        .contact a {
+            color: #8f3f69;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #63324b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 40px;
+            }
+
+            .hero-image {
+                width: 100%;
+            }
+
+            .values {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">✦ ÉTOILE ACADEMY</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#values">Values</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <h4>LEARN • LEAD • SHINE</h4>
+
+            <h1>Big Dreams Begin Here.</h1>
+
+            <p>
+                Welcome to Étoile Academy — a place where
+                knowledge, creativity and confidence come together.
+                We inspire students to dream big, discover their talents
+                and build a bright future.
+            </p>
+
+            <a href="#about" class="btn">Discover Our School ↗</a>
+        </div>
+
+        <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=900"
+            alt="Beautiful school building"
+        >
+
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+
+        <h1 class="section-title">About Our School</h1>
+
+        <p class="about-description">
+            Étoile Academy is a modern educational community dedicated
+            to excellence, creativity and personal growth.
+            We believe every student has unique potential.
+            Our mission is to provide an inspiring environment where
+            students can learn, grow and achieve their dreams.
+        </p>
+
+    </section>
+
+    <!-- VALUES SECTION -->
+    <section class="values" id="values">
+
+        <div class="card">
+            <div class="icon">🎓</div>
+            <h2>Excellence</h2>
+            <p>
+                We encourage curiosity, academic achievement
+                and a lifelong love of learning.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌸</div>
+            <h2>Confidence</h2>
+            <p>
+                We help students express themselves,
+                discover their strengths and become leaders.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">✨</div>
+            <h2>Creativity</h2>
+            <p>
+                We inspire imagination through art, science,
+                technology and exciting projects.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+
+        <h1 class="section-title">Let's Stay Connected</h1>
+
+        <p>
+            Want to learn more about our school?
+            We would love to hear from you!
+        </p>
+
+        <p>
+            Email:
+            <a href="mailto:hello@etoile.example">
+                hello@etoile.example
+            </a>
+        </p>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 ÉTOILE ACADEMY |
+            Dream Big. Learn More. Shine Bright.
+        </p>
+    </footer>
+
+</body>
+</html>
